@@ -1,7 +1,22 @@
 const http = require('http');
-const server = http.createServer((req, res) => {
-    console.log("Udtraj Rout")
-  res.setHeader('Content-Type', 'text/plain');
-  res.end('Uditraj Rout');
-});
+const fs=require('fs');
+const { resolve } = require('path');
+const route=require('./route')
+const server = http.createServer(route);
 server.listen(3000);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
